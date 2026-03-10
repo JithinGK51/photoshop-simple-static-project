@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Photography Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-particles"></div>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>LUXE<span>PHOTO</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Capturing</span>
+                <span class="title-line">Moments</span>
+                <span class="title-line highlight">Beyond Time</span>
+            </h1>
+            <p class="hero-subtitle">Professional Photography Studio</p>
+            <button class="cta-button">Explore Gallery</button>
+        </div>
+        <div class="hero-images">
+            <div class="floating-image img-1"></div>
+            <div class="floating-image img-2"></div>
+            <div class="floating-image img-3"></div>
+        </div>
+    </section>
+
+    <!-- Globe Animation Section -->
+    <section class="globe-section">
+        <div class="globe-container">
+            <h2 class="section-title">Our Global Portfolio</h2>
+            <div class="globe-wrapper">
+                <div class="globe">
+                    <div class="globe-photo photo-1"></div>
+                    <div class="globe-photo photo-2"></div>
+                    <div class="globe-photo photo-3"></div>
+                    <div class="globe-photo photo-4"></div>
+                    <div class="globe-photo photo-5"></div>
+                    <div class="globe-photo photo-6"></div>
+                    <div class="globe-photo photo-7"></div>
+                    <div class="globe-photo photo-8"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Background Slideshow -->
+    <section id="gallery" class="gallery-section">
+        <div class="gallery-background-slideshow">
+            <div class="bg-slide active"></div>
+            <div class="bg-slide"></div>
+            <div class="bg-slide"></div>
+            <div class="bg-slide"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title">Featured Gallery</h2>
+            <div class="gallery-slider-container">
+                <div class="gallery-slider">
+                    <div class="gallery-item slide-left" data-category="portrait">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-overlay">
+                            <h3>Portrait Excellence</h3>
+                            <p>Professional Portraits</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item slide-right" data-category="nature">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-overlay">
+                            <h3>Nature's Beauty</h3>
+                            <p>Landscape Photography</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item slide-left" data-category="wedding">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-overlay">
+                            <h3>Wedding Moments</h3>
+                            <p>Special Events</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item slide-right" data-category="fashion">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-overlay">
+                            <h3>Fashion Forward</h3>
+                            <p>Editorial Shoots</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item slide-left" data-category="architecture">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-overlay">
+                            <h3>Urban Architecture</h3>
+                            <p>Cityscapes</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item slide-right" data-category="travel">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-overlay">
+                            <h3>Travel Stories</h3>
+                            <p>Adventure Photography</p>
+                        </div>
+                    </div>
+                    <!-- Duplicate items for seamless loop -->
+                    <div class="gallery-item slide-left" data-category="portrait">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-overlay">
+                            <h3>Portrait Excellence</h3>
+                            <p>Professional Portraits</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item slide-right" data-category="nature">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-overlay">
+                            <h3>Nature's Beauty</h3>
+                            <p>Landscape Photography</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Our Studio</h2>
+                    <p>We are a luxury photography studio dedicated to capturing the essence of every moment. With years of experience and state-of-the-art equipment, we transform ordinary scenes into extraordinary memories.</p>
+                    <p>Our team of professional photographers brings creativity, passion, and technical excellence to every project, ensuring that your vision comes to life in the most beautiful way possible.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="200">0</div>
+                        <div class="stat-label">Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
